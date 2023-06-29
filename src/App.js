@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Grid from '/home/justin/odin-memory-card/src/Components/grid.js'
 
-function App() {
+const Test = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="title">Memory Card Game</div>
+      <br></br>
+      <div id="instructions">Click on a new picture every round. If you get 36 points, you win!</div>
+      <Grid />
     </div>
-  );
+  )
 }
 
-export default App;
+export default Test

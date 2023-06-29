@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#title, #instructions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+#grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+  outline: 1px solid black;
+  margin-top: 200px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.square {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+  margin: 10px;
+  height: 130px;
+  outline: 1px solid black;
+}
+
+img {
+  max-width: 100px;
+}
+
+
+
