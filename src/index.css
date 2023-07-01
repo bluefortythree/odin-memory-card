@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(216, 236, 255);
 }
 
 code {
@@ -12,16 +13,20 @@ code {
     monospace;
 }
 
-#title, #instructions {
+#title, #instructions, #scoreboard {
   text-align: center;
   margin-top: 1rem;
 }
 
 #title {
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: bold;
+  margin-top: 0;
 }
 
+#instructions {
+  font-size: 1.5rem;
+}
 
 #grid {
   display: grid;
@@ -29,27 +34,67 @@ code {
   align-items: center;
   text-align: center;
   grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
-  outline: 1px solid black;
-  margin-top: 200px;
+  outline: 5px solid black;
+  margin-top: 100px;
   margin-left: 200px;
   margin-right: 200px;
-  background-color: beige;
+  background-color: rgb(255, 230, 183);
 }
 
 .square {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: lavender;
+  background-color: rgb(230, 230, 255);
   margin: 10px;
   height: 130px;
-  outline: 1px solid black;
+  outline: 3px solid rgb(88, 42, 255);
   border-radius: 20px;
 }
 
-img {
-  max-width: 100px;
+.square:hover {
+  background-color: rgb(202, 202, 255);
+  cursor: pointer;
 }
 
+img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#scoreboard > div {
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#status {
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#game-over, #winner {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  font-weight: 600;
+  font-size: 3rem;
+  color: red;
+}
+
+#game-over:hover, #winner:hover {
+  cursor: pointer;
+}
 
 

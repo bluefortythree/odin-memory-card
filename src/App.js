@@ -7,6 +7,7 @@ const Test = () => {
       <div id="title">Memory Card Game</div>
       <br></br>
       <div id="instructions">Click on a new picture every round. If you get 36 points, you win!</div>
+      <br></br>
       <Grid />
     </div>
   )
